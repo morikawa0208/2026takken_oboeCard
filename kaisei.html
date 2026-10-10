@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#203a41">
+<title>2026年 法改正暗記 | 宅建・消して覚える</title>
+<style>
+:root{--text:#24333d;--muted:#62737c;--deep:#203a41;--bg:#f5f7f7;--line:#dce5e6;--accent:#27666c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif}
+button,select,input{font:inherit}button{cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #65a8ae;outline-offset:2px}
+a{color:#21616a}
+header{background:var(--deep);color:#fff}
+.head-inner{max-width:1040px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-weight:850}
+.brand-mark{width:36px;height:36px;display:grid;place-items:center;background:#f0f6f5;color:#275d63;border-radius:9px;font-size:20px}
+.brand small{display:block;font-size:10px;font-weight:500;color:#b6ced1}
+.top-links{display:flex;gap:5px;align-items:center}
+.top-links a{color:#d5e4e6;font-size:13px;font-weight:800;text-decoration:none;border-radius:8px;padding:9px 13px}
+.top-links a.active{color:#203a41;background:white}
+main{max-width:980px;margin:auto;padding:23px 17px 108px}
+.kicker{font-size:11px;color:var(--accent);font-weight:850;letter-spacing:.03em}
+h1{font-size:25px;line-height:1.4;margin:6px 0 8px}
+.subtitle{color:var(--muted);margin:0 0 18px;font-size:13px}
+.statline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:15px}
+.stat{border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px 14px}
+.stat span{font-size:11px;color:var(--muted);font-weight:800}.stat b{display:block;font-size:25px;line-height:1.3}
+.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;background:#fff;padding:15px;border:1px solid var(--line);border-radius:12px}
+.filters label{font-size:12px;font-weight:800;color:#526873}
+.filters select,.filters input{display:block;width:100%;min-height:44px;margin-top:5px;border:1px solid #d5e0e2;background:#fff;border-radius:8px;padding:8px 10px;font-size:14px}
+.filters label.search{grid-column:1/-1}
+.info{display:flex;justify-content:space-between;gap:10px;margin:17px 3px 9px;color:var(--muted);font-size:12px}
+.info button{border:0;background:transparent;color:#24646a;text-decoration:underline;font-size:12px}
+.cards{display:grid;gap:11px}
+.card{border:1px solid var(--line);border-radius:12px;background:white;padding:16px}
+.card-header{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.tag{display:inline-block;border-radius:5px;padding:2px 7px;background:#e4efed;font-weight:850;font-size:11px;color:#245f63}
+.tag.A{background:#edf2f7;color:#435c7d}.tag.B{background:#f0f0f0;color:#56616c}
+.card h2{font-size:18px;line-height:1.45;margin:8px 0 4px}
+.meta{font-size:11px;color:var(--muted);line-height:1.6}
+.record{flex:none;min-width:34px;text-align:center;border-radius:7px;background:#f2f3f4;color:#6b7380;font-weight:900;padding:7px}
+.record.good{background:#e6f5ee;color:#20754f}.record.mid{background:#fff2d9;color:#976b23}.record.bad{background:#faeae8;color:#a8483b}
+.prompt{font-size:15px;line-height:1.8;font-weight:700;margin:14px 0}
+.reveal{background:#eaf4f2;color:#225c63;border:1px solid #cadfdd;border-radius:10px;min-height:48px;width:100%;font-weight:900}
+.answer{padding:13px;margin-top:13px;background:#f3f6f6;border-radius:9px}
+.answer h3{color:#28626b;margin:11px 0 6px;font-size:12px}.answer h3:first-child{margin-top:0}
+.before,.after{font-size:14px;line-height:1.8;background:white;padding:10px 12px;border-radius:6px;margin:0 0 9px}
+.before{border-left:3px solid #a3adb2}.after{border-left:3px solid #2a7774;font-weight:750}
+.words{padding:0;margin:0;list-style:none}.words li{padding:9px 0;line-height:1.8;border-bottom:1px solid #dce4e5;font-weight:650;font-size:14px}
+.words li:last-child{border-bottom:0}
+.note-words li{font-weight:500}
+.ratings{border-top:1px solid var(--line);margin-top:15px;padding-top:12px}
+.ratings p{font-size:12px;color:var(--muted);margin:0 0 10px}
+.rate-btns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.rate-btns button{border:1px solid #d4dfe1;border-radius:9px;min-height:47px;background:#fff;font-weight:850;padding:6px 2px;font-size:13px}
+.rate-btns button.chosen{border:2px solid #2b666d;background:#edf6f5}
+.sources{display:flex;gap:13px;flex-wrap:wrap;margin:12px 0 0}.sources a{font-size:12px;line-height:1.5}
+.bottom-note{font-size:12px;color:var(--muted);line-height:1.8;margin-top:24px}
+.empty{background:#fff;border:1px solid var(--line);border-radius:11px;padding:35px 16px;text-align:center;color:var(--muted)}
+.bottom-nav{display:none}
+@media(max-width:700px){
+ .head-inner{padding:11px 13px}
+ .brand{font-size:14px}.brand-mark{width:34px;height:34px}
+ .top-links{display:none}main{padding:18px 11px calc(102px + env(safe-area-inset-bottom))}
+ h1{font-size:21px}.subtitle{font-size:12px}
+ .statline{gap:7px}.stat{padding:9px 10px}.stat span{font-size:10px}.stat b{font-size:22px}
+ .filters{grid-template-columns:1fr 1fr;gap:8px;padding:11px}
+ .filters label{font-size:11px}.filters label.search{grid-column:1/-1}
+ .filters select,.filters input{font-size:15px;min-height:47px}
+ .card{padding:14px 12px}.card h2{font-size:17px}.prompt{font-size:15px}
+ .answer{padding:11px}.words li{font-size:15px}.rate-btns button{font-size:11px;min-height:47px}
+ .bottom-nav{position:fixed;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));padding:6px 4px calc(6px + env(safe-area-inset-bottom));gap:2px;background:white;border-top:1px solid #d6e0e1;z-index:20}
+ .bottom-nav a,.bottom-nav button{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;color:#5c6d78;font-size:10px;font-weight:750;min-height:53px;text-decoration:none;border:none;border-radius:9px;background:transparent}
+ .bottom-nav .active{background:#e9f4f2;color:#1d6067}
+ .bottom-nav span{font-size:19px}
+}
+</style></head>
+<body>
+<header><div class="head-inner"><a class="brand" href="./"><span class="brand-mark">宅</span><span>消して覚える / 宅建<small>2026年法改正・比較暗記</small></span></a><nav class="top-links"><a href="./">過去問復習</a><a href="./anki.html">直前暗記</a><a href="./kaisei.html" class="active" aria-current="page">法改正</a></nav></div></header>
+<main>
+<div class="kicker">2026年試験向け / 重要度S・A・B</div>
+<h1>2026年 法改正・暗記まとめ</h1>
+<p class="subtitle">改正前を思い出す → 改正後と数字を確認 → ○△×を記録。<br>施行日と出典付き。近年の重要改正も区別して掲載。</p>
+<div class="statline"><div class="stat"><span>改正テーマ</span><b id="total">--</b></div><div class="stat"><span>覚えた ○</span><b id="goodCount">0</b></div><div class="stat"><span>復習 △×</span><b id="reviewCount">0</b></div></div>
+<div class="filters">
+<label>重要度<select id="priority"><option value="S">最優先 S</option><option value="all">すべて</option><option value="A">重要 A</option><option value="B">補足 B</option></select></label>
+<label>科目<select id="subject"><option value="all">すべて</option><option>宅建業法</option><option>権利関係</option><option>法令上の制限</option><option>税・その他</option></select></label>
+<label>復習状況<select id="rating"><option value="all">すべて</option><option value="review">△・×のみ</option><option value="unseen">未判定のみ</option><option value="good">○のみ</option></select></label>
+<label class="search">キーワード検索<input type="search" id="search" placeholder="区分所有法 / 住所登記 / 税制"></label>
+</div>
+<div class="info"><span id="countline">読み込み中...</span><button id="resetFilters">絞り込みを解除</button></div>
+<div class="cards" id="cards"><div class="empty">法改正カードを読み込んでいます</div></div>
+<p class="bottom-note">重要度は<strong>吉野塾の公開動画・関連解説の強調と改正内容から作成した学習上の独自評価</strong>です。吉野塾が各法改正にS/A/Bを付けたという意味ではありません。動画の全発言を項目ごとに確認した評価ではありません。<br>基準は2026年4月1日。改正の施行日・対象者・適用期間はカードの公式出典で再確認してください。学習記録はこのブラウザ内に保存され、端末間で同期しません。</p>
+</main>
+<nav class="bottom-nav" aria-label="スマホ下部メニュー"><a href="./"><span>▤</span>過去問</a><a href="./anki.html"><span>✦</span>直前暗記</a><a href="./kaisei.html" class="active"><span>↺</span>法改正</a><button id="topBtn"><span>↑</span>先頭へ</button></nav>
+<script>
+(function(){
+'use strict';
+var DATA_URL='./data/reforms2026.json',STORE='takken_reforms_progress_v1',CACHE='takken_reforms_cache_v1';
+var $=function(x){return document.getElementById(x)};
+var escapeHtml=function(x){return String(x==null?'':x).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+function read(key,defaultVal){try{var s=localStorage.getItem(key);return s?JSON.parse(s):defaultVal}catch(e){return defaultVal}}
+function save(key,obj){try{localStorage.setItem(key,JSON.stringify(obj))}catch(e){console.warn('この端末に保存できません',e)}}
+var ratings=read(STORE,{}),cards=[],opened={};
+if(!ratings||typeof ratings!=='object'||Array.isArray(ratings))ratings={};
+var subjects=['宅建業法','権利関係','法令上の制限','税・その他'],sortRank={S:0,A:1,B:2};
+function validate(obj){
+ var list=Array.isArray(obj)?obj:obj&&obj.reforms;
+ if(!Array.isArray(list))throw Error('法改正データの形式が正しくありません');
+ var ids={};
+ var out=list.map(function(r){
+  if(!r||!r.id||!r.subject||!r.title||!Array.isArray(r.keywords)||!r.keywords.length||ids[r.id]||!(r.priority in sortRank))throw Error('法改正データに不備があります');
+  ids[r.id]=true;
+  return r;
+ });
+ out.sort(function(a,b){return sortRank[a.priority]-sortRank[b.priority]||subjects.indexOf(a.subject)-subjects.indexOf(b.subject)||(a.area+a.title).localeCompare(b.area+b.title,'ja')});
+ return out;
+}
+function filters(){return {priority:$('priority').value,subject:$('subject').value,rating:$('rating').value,search:$('search').value.toLowerCase().trim()}}
+function visible(){
+ var f=filters();
+ return cards.filter(function(c){
+  var rating=ratings[c.id];
+  if(f.priority!=='all'&&f.priority!==c.priority)return false;
+  if(f.subject!=='all'&&f.subject!==c.subject)return false;
+  if(f.rating==='review'&&!['mid','bad'].includes(rating))return false;
+  if(f.rating==='unseen'&&['good','mid','bad'].includes(rating))return false;
+  if(f.rating==='good'&&rating!=='good')return false;
+  return !f.search||[c.title,c.subject,c.area,c.previous,c.current,c.effective].concat(c.keywords,c.notes||[]).join(' ').toLowerCase().includes(f.search);
+ });
+}
+function sourceLink(url,title){
+ if(typeof url!=='string'||!/^https:\/\/[a-z0-9.\-]+(?:\/[^\s<>"]*)?$/i.test(url))return '';
+ return '<a href="'+escapeHtml(url)+'" target="_blank" rel="noopener noreferrer">'+title+' ↗</a>';
+}
+function cardMarkup(c){
+ var open=!!opened[c.id],rating=ratings[c.id]||'',pName={S:'最優先 S',A:'重要 A',B:'補足 B'}[c.priority],e=escapeHtml;
+ var result='<section class="card" data-id="'+e(c.id)+'"><div class="card-header"><div><span class="tag '+c.priority+'">'+pName+'</span><h2>'+e(c.title)+'</h2><div class="meta">'+e(c.subject)+' / '+e(c.area)+'<br>'+e(c.scope)+' ｜ '+e(c.effective)+'</div></div><span class="record '+rating+'">'+({good:'○',mid:'△',bad:'×'}[rating]||'未')+'</span></div>';
+ result+='<p class="prompt">'+e(c.prompt)+'</p><button class="reveal" data-reveal="'+e(c.id)+'" aria-expanded="'+open+'">'+(open?'解説を隠す ↑':'改正点を確認する ↓')+'</button>';
+ if(open){
+  result+='<div class="answer"><h3>改正前</h3><p class="before">'+e(c.previous)+'</p><h3>改正後</h3><p class="after">'+e(c.current)+'</p><h3>覚える核心</h3><ul class="words">'+c.keywords.map(function(x){return '<li>'+e(x)+'</li>'}).join('')+'</ul>';
+  if(c.notes&&c.notes.length)result+='<h3>例外・間違えやすい点</h3><ul class="words note-words">'+c.notes.map(function(x){return '<li>'+e(x)+'</li>'}).join('')+'</ul>';
+  result+='</div><div class="ratings"><p>言葉で説明できたかを記録（不安なら△）</p><div class="rate-btns">';
+  [['good','○ 覚えた'],['mid','△ 不安'],['bad','× 未暗記']].forEach(function(pair){result+='<button data-record="'+e(c.id)+'" data-value="'+pair[0]+'" class="'+(rating===pair[0]?'chosen':'')+'">'+pair[1]+'</button>'});
+  result+='</div></div>';
+ }
+ result+='<div class="sources">'+sourceLink(c.officialUrl,'公式資料')+sourceLink(c.yoshinoUrl,'吉野塾関連解説')+'</div></section>';
+ return result;
+}
+function stats(){
+ $('total').textContent=cards.length;
+ $('goodCount').textContent=cards.filter(function(c){return ratings[c.id]==='good'}).length;
+ $('reviewCount').textContent=cards.filter(function(c){return ratings[c.id]==='mid'||ratings[c.id]==='bad'}).length;
+}
+function render(){
+ var list=visible();
+ $('countline').textContent='表示 '+list.length+' / '+cards.length+' 項目';
+ $('cards').innerHTML=list.length?list.map(cardMarkup).join(''):'<div class="empty">条件に合う項目はありません</div>';
+ stats();
+}
+function refreshOne(elem,id){
+ var entry=cards.find(function(x){return x.id===id});
+ var block=elem.closest('.card');
+ if(entry&&block)block.outerHTML=cardMarkup(entry);
+}
+$('cards').addEventListener('click',function(ev){
+ var toggle=ev.target.closest('button[data-reveal]');
+ if(toggle){var id=toggle.dataset.reveal;opened[id]=!opened[id];refreshOne(toggle,id);return}
+ var record=ev.target.closest('button[data-record]');
+ if(record){var id=record.dataset.record;ratings[id]=record.dataset.value;save(STORE,ratings);refreshOne(record,id);stats();}
+});
+['subject','rating','priority'].forEach(function(x){$(x).addEventListener('change',render)});
+$('search').addEventListener('input',render);
+$('resetFilters').addEventListener('click',function(){$('priority').value='all';$('subject').value='all';$('rating').value='all';$('search').value='';render()});
+$('topBtn').addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+async function start(){
+ try{
+  var res=await fetch(DATA_URL,{cache:'no-store'});
+  if(!res.ok)throw Error('読込 HTTP '+res.status);
+  cards=validate(await res.json());save(CACHE,cards);
+ }catch(e){
+  try{cards=validate(read(CACHE,[]))}catch(_){cards=[]}
+  if(!cards.length){$('countline').textContent='読み込み失敗';$('cards').innerHTML='<div class="empty">データを読み込めません。通信状態を確認して再読み込みしてください。</div>';return}
+ }
+ render();
+}
+start();
+})();
+</script></body></html>
