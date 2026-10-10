@@ -56,10 +56,11 @@ header{background:var(--deep);color:white}
  .btm .active{color:#125c63;background:#e9f6f3}
  .btm span{font-size:21px;line-height:1}
 }
+@media(max-width:700px){.btm{grid-template-columns:repeat(4,minmax(0,1fr))}.btm a,.btm button{font-size:10px}}
 </style>
 </head>
 <body>
-<header><div class="top"><a class="brand" href="./"><span class="logo">宅</span><div><b>消して覚える / 宅建</b><small>重要知識を短い言葉で覚える</small></div></a><nav class="topnav"><a href="./">過去問3STEP復習</a><a href="./anki.html" class="active" aria-current="page">直前暗記</a></nav></div></header>
+<header><div class="top"><a class="brand" href="./"><span class="logo">宅</span><div><b>消して覚える / 宅建</b><small>重要知識を短い言葉で覚える</small></div></a><nav class="topnav"><a href="./">過去問3STEP復習</a><a href="./anki.html" class="active" aria-current="page">直前暗記</a><a href="./kaisei.html">法改正</a></nav></div></header>
 <main class="shell">
 <section class="intro"><div><div class="kicker">2026 宅建試験・直前総まとめ</div><h1>直前暗記｜最優先の知識を詰める</h1><p>問題を見て頭で答える → キーワードを見る → ○△×で記録。<br>過去問の登録とは別の、基本・重要論点の暗記ページです。</p></div></section>
 <div class="stats"><div class="stat"><span>暗記項目</span><b id="total">--</b></div><div class="stat"><span>覚えた ○</span><b id="done">0</b></div><div class="stat"><span>要復習 △×</span><b id="review">0</b></div></div>
@@ -68,7 +69,7 @@ header{background:var(--deep);color:white}
 <div id="cards" class="cards" aria-live="polite"><div class="empty">暗記項目を読み込んでいます…</div></div>
 <div class="bottom-note">※「最優先」「重要」は復習順を決めるための目安で、実際の出題を保証するものではありません。2026年度の法改正・経過措置は、お使いのテキストと <a href="https://bookstore.tac-school.co.jp/dl_service/261011926/261011926" target="_blank" rel="noopener">TAC出版の2026年度法改正資料</a>でも照合してください。学習記録はこのブラウザ内に保存します。</div>
 </main>
-<nav class="btm" aria-label="スマホメニュー"><a href="./"><span>▤</span>過去問復習</a><a class="active" href="./anki.html" aria-current="page"><span>✦</span>直前暗記</a><button id="goTop" type="button"><span>↑</span>ページ先頭</button></nav>
+<nav class="btm" aria-label="スマホメニュー"><a href="./"><span>▤</span>過去問復習</a><a class="active" href="./anki.html" aria-current="page"><span>✦</span>直前暗記</a><a href="./kaisei.html"><span>↺</span>法改正</a><button id="goTop" type="button"><span>↑</span>ページ先頭</button></nav>
 <script>
 (()=>{
 'use strict';
