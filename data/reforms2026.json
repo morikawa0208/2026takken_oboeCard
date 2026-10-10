@@ -1,0 +1,441 @@
+{
+  "year": 2026,
+  "cutoff": "2026-04-01",
+  "explanation": "宅建2026直前用の主要改正と近年重要改正。吉野塾の公開動画のタイトル・概要・関連解説での強調と、法律の改正幅から作成した独自優先度。動画全編の発言を項目ごとに採点したものではない。",
+  "priorityMeaning": {
+    "S": "最優先：吉野塾が大改正・要注意として個別に強調した分野と中核論点",
+    "A": "重要：吉野塾の重要改正・直前総まとめの対象分野かつ出題の基礎となる改正",
+    "B": "補足：細部・近年の比較対象。時間があれば確認"
+  },
+  "reforms": [
+    {
+      "id": "reform-001",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "普通決議の分母が変わる",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「普通決議の分母が変わる」は、改正前と改正後で何が違う？",
+      "previous": "区分所有者・議決権の総数の各過半数",
+      "current": "出席した区分所有者・議決権の各過半数",
+      "keywords": [
+        "普通決議 → 出席者・出席議決権の各過半数",
+        "『半数以上』× → 『過半数』○"
+      ],
+      "notes": [
+        "例外の特別決議と混同しない"
+      ],
+      "officialUrl": "https://laws.e-gov.go.jp/law/337AC0000000069",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-002",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "規約の設定・変更・廃止の特別決議",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「規約の設定・変更・廃止の特別決議」は、改正前と改正後で何が違う？",
+      "previous": "区分所有者・議決権の総数の各4分の3以上",
+      "current": "総数の区分所有者・議決権の各過半数が出席し、出席者・その議決権の各4分の3以上",
+      "keywords": [
+        "定足数 → 総数の各過半数出席",
+        "可決 → 出席者・出席議決権の各3/4以上",
+        "特別な影響を受ける者 → その承諾"
+      ],
+      "notes": [
+        "『全員の各3/4』と覚えたままにしない"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/jutakukentiku/house/content/001971535.pdf",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-003",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "共用部分の重大変更の決議",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「共用部分の重大変更の決議」は、改正前と改正後で何が違う？",
+      "previous": "区分所有者・議決権の総数の各4分の3以上を基本",
+      "current": "定足数＝総数の各過半数／原則、出席者・議決権の各4分の3以上",
+      "keywords": [
+        "原則 → 総数の各過半数出席＋出席者の各3/4以上",
+        "安全性確保・バリアフリー等の特例 → 各2/3に緩和する場合あり"
+      ],
+      "notes": [
+        "改正後は決議の分母が重要。軽微変更と分ける"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/jutakukentiku/house/content/001971535.pdf",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-004",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "建替え決議の緩和",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「建替え決議の緩和」は、改正前と改正後で何が違う？",
+      "previous": "建替え決議は区分所有者・議決権の各5分の4以上",
+      "current": "原則5分の4を維持し、耐震性不足等の法定の客観的事由がある場合は各4分の3以上",
+      "keywords": [
+        "通常の建替え → 総数の各4/5以上",
+        "耐震性・防火・外壁剥落・配管劣化・バリアフリー等の要件 → 各3/4以上"
+      ],
+      "notes": [
+        "『全て4分の3に緩和』は誤り"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/policy/shingikai/content/001842038.pdf",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-005",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "建替え以外の再生決議の新設",
+      "priority": "A",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「建替え以外の再生決議の新設」は、改正前と改正後で何が違う？",
+      "previous": "区分所有法上の多数決による再生手段は限られていた",
+      "current": "建物更新・建物敷地売却・建物取壊し敷地売却・取壊し等の決議を新設",
+      "keywords": [
+        "新設 → 建物更新決議・各種売却決議・取壊し決議",
+        "原則、区分所有者・議決権の各4/5以上など厳格な要件"
+      ],
+      "notes": [
+        "決議の種類と要件を区別する"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/report/press/house03_hh_000254.html",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-006",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "所在不明の区分所有者を決議の母数から除外",
+      "priority": "A",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「所在不明の区分所有者を決議の母数から除外」は、改正前と改正後で何が違う？",
+      "previous": "不明所有者が決議を難しくする場合があった",
+      "current": "裁判所の裁判で所在等不明区分所有者を決議の母数から除外できる制度が新設",
+      "keywords": [
+        "所在等不明 → 裁判所の裁判で除外可能",
+        "管理者等の申立て／当然に自動除外は×"
+      ],
+      "notes": [
+        "所在が分からないだけで勝手に票を減らすことはできない"
+      ],
+      "officialUrl": "https://www.courts.go.jp/tokyo/vc-files/tokyo/%E6%89%80%E5%9C%A8%E7%AD%89%E4%B8%8D%E6%98%8E%E5%8C%BA%E5%88%86%E6%89%80%E6%9C%89%E8%80%85%E7%AD%89%E3%81%AE%E9%99%A4%E5%A4%96%E3%81%AE%E8%A3%81%E5%88%A4%E3%81%AB%E4%BF%82%E3%82%8B%E7%94%B3%E7%AB%8B%E3%81%A6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.pdf",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-007",
+      "subject": "権利関係",
+      "area": "区分所有法",
+      "title": "集会招集通知の期間",
+      "priority": "A",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「集会招集通知の期間」は、改正前と改正後で何が違う？",
+      "previous": "集会の招集通知の1週間は、規約で短縮できる場合があった",
+      "current": "原則1週間前までに通知、規約で伸長は可能だが短縮できない",
+      "keywords": [
+        "1週間前まで → 原則",
+        "規約で延長○／短縮×",
+        "議案の要領 → すべての決議で通知に記載"
+      ],
+      "notes": [
+        "決議要件と招集手続を混同しない"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/jutakukentiku/house/content/001971535.pdf",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12976750341.html"
+    },
+    {
+      "id": "reform-008",
+      "subject": "権利関係",
+      "area": "不動産登記法",
+      "title": "住所・氏名変更登記の義務化",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「住所・氏名変更登記の義務化」は、改正前と改正後で何が違う？",
+      "previous": "所有権の住所・氏名変更登記は原則として義務ではなかった",
+      "current": "変更日から2年以内の変更登記が義務／正当な理由なく怠ると5万円以下の過料",
+      "keywords": [
+        "変更から2年以内",
+        "過料 → 5万円以下",
+        "2026年4月1日より前の変更 → 2028年3月31日まで"
+      ],
+      "notes": [
+        "相続登記の3年以内・過料10万円以下と区別"
+      ],
+      "officialUrl": "https://www.moj.go.jp/MINJI/minji05_00687.html",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12977034520.html"
+    },
+    {
+      "id": "reform-009",
+      "subject": "権利関係",
+      "area": "不動産登記法",
+      "title": "スマート変更登記",
+      "priority": "A",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「スマート変更登記」は、改正前と改正後で何が違う？",
+      "previous": "住所等変更の登記申請を所有者が自ら行う必要があった",
+      "current": "検索用情報の申出等により、登記官が職権で住所等変更登記をする仕組みが導入",
+      "keywords": [
+        "所有者 → 検索用情報の申出等",
+        "登記官 → 職権による変更登記",
+        "申出と変更登記の手続を区別"
+      ],
+      "notes": [
+        "職権登記が常に自動で行われるわけではない"
+      ],
+      "officialUrl": "https://www.moj.go.jp/MINJI/minji05_00687.html",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/entry-12977034520.html"
+    },
+    {
+      "id": "reform-010",
+      "subject": "宅建業法",
+      "area": "35条重要事項説明",
+      "title": "管理業者管理者方式の説明事項追加",
+      "priority": "S",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「管理業者管理者方式の説明事項追加」は、改正前と改正後で何が違う？",
+      "previous": "区分所有建物の35条説明事項に、新しい管理業者管理者方式の明示ルールがなかった",
+      "current": "区分所有建物の売買等で、管理組合から委託を受けたマンション管理業者が管理者等となっている場合の説明事項が追加",
+      "keywords": [
+        "区分所有建物の売買・交換 → 35条の追加事項に注意",
+        "管理業者管理者方式 → 採用されているか等を説明"
+      ],
+      "notes": [
+        "建物の賃貸借まで一律に同じ説明事項を課すわけではない"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/totikensangyo/const/1_6_bt_000268.html",
+      "yoshinoUrl": "https://yoshinojuku.co.jp/"
+    },
+    {
+      "id": "reform-011",
+      "subject": "宅建業法",
+      "area": "免許・罰則",
+      "title": "懲役・禁錮から拘禁刑への一本化",
+      "priority": "A",
+      "effective": "2025-06-01",
+      "scope": "2025年施行・2026年度の重要改正",
+      "prompt": "「懲役・禁錮から拘禁刑への一本化」は、改正前と改正後で何が違う？",
+      "previous": "懲役・禁錮という2種類の自由刑があった",
+      "current": "拘禁刑に一本化され、宅建業法の免許欠格事由等の用語も変更",
+      "keywords": [
+        "免許欠格事由 → 拘禁刑以上に注意",
+        "懲役・禁錮 → 拘禁刑",
+        "刑の執行終了等から5年の要件は別に確認"
+      ],
+      "notes": [
+        "2026年の新施行ではなく、2025年施行の重要改正"
+      ],
+      "officialUrl": "https://takken-hiroba.com/2026-kaisei/",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/theme-10105107860.html"
+    },
+    {
+      "id": "reform-012",
+      "subject": "宅建業法",
+      "area": "標識",
+      "title": "宅建業者の標識の大きさ等の見直し",
+      "priority": "B",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「宅建業者の標識の大きさ等の見直し」は、改正前と改正後で何が違う？",
+      "previous": "従前の様式・規格",
+      "current": "改正施行規則で標識の大きさ・様式などが見直された",
+      "keywords": [
+        "標識 → 2026年4月に規格・様式の見直し",
+        "具体的な大きさ → 公式別記様式で最終確認"
+      ],
+      "notes": [
+        "他の標識（案内所・取引士証）と混同しない"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/totikensangyo/const/1_6_bt_000268.html",
+      "yoshinoUrl": "https://ameblo.jp/knpky474/theme-10105107860.html"
+    },
+    {
+      "id": "reform-013",
+      "subject": "法令上の制限",
+      "area": "建築基準法",
+      "title": "4号特例見直し・建築確認の対象拡大",
+      "priority": "A",
+      "effective": "2025-04-01",
+      "scope": "2025年施行・2026年度の重要改正",
+      "prompt": "「4号特例見直し・建築確認の対象拡大」は、改正前と改正後で何が違う？",
+      "previous": "木造2階建てや一定規模の住宅について審査省略の範囲が広かった",
+      "current": "新2号・新3号建築物へ再編、木造2階建て等の審査項目を拡大",
+      "keywords": [
+        "木造2階建て → 新2号建築物",
+        "旧4号特例 → 対象範囲縮小",
+        "建築確認の要否と審査省略範囲は別"
+      ],
+      "notes": [
+        "2025年施行。2026年度も旧基準で解かない"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/jutakukentiku/build/r4kaisei_kijunhou0001.html",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=MYKLVb3Xtw8"
+    },
+    {
+      "id": "reform-014",
+      "subject": "法令上の制限",
+      "area": "建築物省エネ法",
+      "title": "新築建物の省エネ基準適合義務の拡大",
+      "priority": "A",
+      "effective": "2025-04-01",
+      "scope": "2025年施行・2026年度の重要改正",
+      "prompt": "「新築建物の省エネ基準適合義務の拡大」は、改正前と改正後で何が違う？",
+      "previous": "省エネ適合義務が主に一定規模以上に限られていた",
+      "current": "原則としてすべての新築住宅・非住宅に省エネ基準適合義務",
+      "keywords": [
+        "原則すべての新築住宅・非住宅",
+        "確認審査と一体化する場合あり"
+      ],
+      "notes": [
+        "小規模建物などの扱いに例外がある"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/jutakukentiku/house/01.html",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=MYKLVb3Xtw8"
+    },
+    {
+      "id": "reform-015",
+      "subject": "宅建業法",
+      "area": "媒介契約",
+      "title": "レインズ登録事項に取引状況を追加",
+      "priority": "A",
+      "effective": "2025-01-01",
+      "scope": "2025年施行・2026年度の重要改正",
+      "prompt": "「レインズ登録事項に取引状況を追加」は、改正前と改正後で何が違う？",
+      "previous": "専任媒介等でレインズに登録する取引状況の運用は任意の面があった",
+      "current": "宅建業者に対し取引状況の登録義務を明確化",
+      "keywords": [
+        "レインズ → 取引状況の登録義務",
+        "売主 → 登録証明書から状況を確認しやすく"
+      ],
+      "notes": [
+        "登録期間5日・7日など従来の期限ともセットで確認"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/report/press/tochi_fudousan_kensetsugyo16_hh_000001_00087.html",
+      "yoshinoUrl": "https://yoshinojuku.co.jp/"
+    },
+    {
+      "id": "reform-016",
+      "subject": "税・その他",
+      "area": "所得税",
+      "title": "住宅ローン控除の期限延長と改正",
+      "priority": "A",
+      "effective": "2026-01-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「住宅ローン控除の期限延長と改正」は、改正前と改正後で何が違う？",
+      "previous": "従前の住宅ローン控除の適用期限は2025年末まで",
+      "current": "2026年税制改正で2030年末まで5年延長。住宅区分・居住年による借入限度額と控除期間等を見直し",
+      "keywords": [
+        "適用期限 → 2030年12月31日まで",
+        "控除率 → 原則0.7％",
+        "認定住宅等 → 住宅区分・入居年で借入限度額／控除期間を区別"
+      ],
+      "notes": [
+        "入居年2025以前と2026以降の制度を混同しない"
+      ],
+      "officialUrl": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_01.html",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=MYKLVb3Xtw8"
+    },
+    {
+      "id": "reform-017",
+      "subject": "税・その他",
+      "area": "登録免許税",
+      "title": "土地売買の移転登記に係る軽減措置の延長",
+      "priority": "B",
+      "effective": "2026-04-01",
+      "scope": "2026年度試験の改正",
+      "prompt": "「土地売買の移転登記に係る軽減措置の延長」は、改正前と改正後で何が違う？",
+      "previous": "登録免許税の土地売買の軽減措置の適用期限が到来予定",
+      "current": "令和8年度税制改正で適用期限を3年延長",
+      "keywords": [
+        "土地売買の所有権移転登記 → 軽減措置を3年延長",
+        "適用期限と本則税率を区別"
+      ],
+      "notes": [
+        "軽減税率の数字はテキストの最新年版で別途確認"
+      ],
+      "officialUrl": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_02.htm",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=MYKLVb3Xtw8"
+    },
+    {
+      "id": "reform-018",
+      "subject": "税・その他",
+      "area": "不動産取得税",
+      "title": "住宅と土地の税負担軽減措置の見直し",
+      "priority": "B",
+      "effective": "2026年度",
+      "scope": "2026年度試験の改正",
+      "prompt": "「住宅と土地の税負担軽減措置の見直し」は、改正前と改正後で何が違う？",
+      "previous": "住宅の不動産取得税の特例に従前の床面積要件等があった",
+      "current": "令和8年度税制改正で対象住宅の床面積下限の見直し、適用条件の整理を実施",
+      "keywords": [
+        "床面積下限 → 原則40㎡以上へ見直し",
+        "地域・条件により従来の50㎡基準を残す例外あり"
+      ],
+      "notes": [
+        "数字だけでなく適用時期・区域・用途を必ず確認"
+      ],
+      "officialUrl": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_02.htm",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=MYKLVb3Xtw8"
+    },
+    {
+      "id": "reform-019",
+      "subject": "権利関係",
+      "area": "相続登記",
+      "title": "相続登記義務化（近年改正）",
+      "priority": "B",
+      "effective": "2024-04-01",
+      "scope": "近年改正・比較用",
+      "prompt": "「相続登記義務化（近年改正）」は、改正前と改正後で何が違う？",
+      "previous": "相続による所有権取得後、名義変更は原則義務ではなかった",
+      "current": "取得を知った日から3年以内に申請義務／正当理由なく怠ると10万円以下の過料",
+      "keywords": [
+        "相続登記 → 3年以内",
+        "過料 → 10万円以下",
+        "住所等変更登記 → 2年・5万円以下"
+      ],
+      "notes": [
+        "2026年新改正ではなく、直前に比較したい近年改正"
+      ],
+      "officialUrl": "https://www.moj.go.jp/MINJI/minji05_00343.html",
+      "yoshinoUrl": "https://www.youtube.com/watch?v=QYgVFkj9Omw"
+    },
+    {
+      "id": "reform-020",
+      "subject": "宅建業法",
+      "area": "媒介報酬",
+      "title": "低廉な空き家等の報酬上限見直し（近年改正）",
+      "priority": "B",
+      "effective": "2024-07-01",
+      "scope": "近年改正・比較用",
+      "prompt": "「低廉な空き家等の報酬上限見直し（近年改正）」は、改正前と改正後で何が違う？",
+      "previous": "低廉物件の特例対象等が現在より限定的だった",
+      "current": "800万円以下の宅地建物は媒介報酬の特例対象、依頼者一方から受け取れる報酬上限は税込33万円",
+      "keywords": [
+        "対象 → 価格800万円以下",
+        "上限 → 33万円（税込）",
+        "依頼者との事前合意"
+      ],
+      "notes": [
+        "2026年の新施行ではなく、近年改正の重要比較"
+      ],
+      "officialUrl": "https://www.mlit.go.jp/totikensangyo/const/1_6_bt_000268.html",
+      "yoshinoUrl": "https://yoshinojuku.co.jp/"
+    }
+  ]
+}
