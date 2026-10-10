@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#203a41">
+<meta name="description" content="宅建士試験・直前暗記。原則・数字・例外を短いキーワードから思い出すための学習ページ">
+<title>直前暗記 | 消して覚える 宅建</title>
+<style>
+:root{--ink:#23323d;--muted:#667785;--paper:#fff;--bg:#f5f7f7;--line:#dce4e6;--deep:#203a41;--sea:#e7f3f1;--sea-ink:#225b61;--warn:#9a6b21;--bad:#aa4438;--good:#26754e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;background:var(--bg);color:var(--ink);font-size:15px}
+button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #478c93;outline-offset:2px}
+header{background:var(--deep);color:white}
+.top{max-width:1140px;padding:18px 22px;margin:0 auto;display:flex;gap:22px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:white}
+.logo{width:37px;height:37px;border:1px solid #c8dddd99;border-radius:9px;display:grid;place-items:center;font-weight:900;font-size:21px}
+.brand b{font-size:17px}.brand small{display:block;font-size:10px;color:#d5e1e3;margin-top:4px}
+.topnav{display:flex;gap:8px;align-items:center}.topnav a{text-decoration:none;color:#dce8e8;border-radius:9px;font-size:13px;font-weight:800;padding:11px 14px}
+.topnav a.active{color:#203a41;background:#fff}
+.shell{max-width:970px;margin:0 auto;padding:24px 20px 100px}
+.intro{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:18px}.kicker{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--sea-ink)}h1{font-size:27px;margin:6px 0 8px;line-height:1.35}p{line-height:1.8}.intro p{font-size:13px;color:var(--muted);margin:0}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:18px}
+.stat{background:white;border:1px solid var(--line);border-radius:12px;padding:13px 16px}.stat span{display:block;color:var(--muted);font-size:12px;font-weight:750}.stat b{display:block;font-size:27px;margin-top:4px;font-variant-numeric:tabular-nums}
+.filters{background:white;border:1px solid var(--line);padding:14px;border-radius:13px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+.filters label{font-size:12px;font-weight:850;color:var(--muted)}.filters select,.filters input{width:100%;margin-top:7px;border:1px solid #d5dfe1;background:#fff;color:var(--ink);border-radius:9px;min-height:45px;padding:9px;font-size:15px}
+.filters label.search{grid-column:1/-1}
+.filters input{padding:10px 13px}
+.countline{margin:16px 2px 9px;font-size:12px;color:var(--muted);font-weight:850;display:flex;justify-content:space-between;align-items:center;gap:9px}.countline button{border:0;background:none;font-size:12px;text-decoration:underline;color:#386870;padding:7px}
+.cards{display:grid;gap:11px}.study-card{background:var(--paper);border:1px solid var(--line);border-radius:13px;padding:17px 18px 15px;scroll-margin-top:18px}
+.c-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.tag{font-size:10px;display:inline-flex;border-radius:5px;padding:3px 7px;background:#eaf1f1;color:#28626a;font-weight:900}
+.tag.secondary{background:#f1f2f2;color:#59646e}
+.c-head h2{margin:7px 0 0;font-size:18px;line-height:1.55}.unit{font-size:11px;color:var(--muted);margin-top:4px}.rating{font-weight:900;font-size:13px;min-width:33px;text-align:center;background:#f1f3f3;border-radius:8px;padding:7px}
+.rating.good{background:#e5f4ec;color:var(--good)}.rating.mid{background:#fff1d8;color:var(--warn)}.rating.bad{background:#fae9e6;color:var(--bad)}
+.question{font-weight:700;font-size:15px;line-height:1.85;margin:16px 0 14px}
+.toggle{width:100%;min-height:48px;padding:10px 13px;border-radius:10px;border:1px solid #cbdedd;background:var(--sea);color:var(--sea-ink);font-weight:900;font-size:14px}
+.answer{margin:13px 0 2px;border-radius:11px;background:#f3f6f6;padding:15px 15px 12px}.answer h3{font-size:12px;color:#2d6870;margin:0 0 5px}.keywords{padding:0;margin:0;list-style:none}.keywords li{line-height:1.85;font-size:15px;font-weight:650;padding:10px 0;border-bottom:1px solid #dfe6e7;white-space:pre-wrap;overflow-wrap:anywhere}.keywords li:last-child{border-bottom:0}.cautions{margin-top:14px}.cautions h3{color:#7c5829}.cautions .keywords li{font-size:14px;font-weight:500}
+.review{margin-top:16px;border-top:1px solid var(--line);padding-top:13px}.review p{margin:0 0 9px;color:var(--muted);font-size:12px}.review-buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.review-buttons button{border:1px solid #d6dede;background:#fff;color:#364a53;border-radius:9px;min-height:46px;font-weight:850;font-size:13px;padding:7px 4px}
+.review-buttons button[data-rating="good"].chosen{border-color:#a8d6bd;background:#e7f5ed;color:#1d7149}
+.review-buttons button[data-rating="mid"].chosen{border-color:#ebd2a2;background:#fff3db;color:#96621c}
+.review-buttons button[data-rating="bad"].chosen{border-color:#e6bdb7;background:#fae9e7;color:#a64236}
+.bottom-note{font-size:12px;color:var(--muted);line-height:1.8;margin:24px 2px 9px}
+.empty{padding:32px 20px;text-align:center;color:var(--muted);background:white;border:1px solid var(--line);border-radius:12px}
+.btm{display:none}
+@media(max-width:700px){
+ .top{padding:12px 15px}.brand b{font-size:15px}.topnav{display:none}
+ .shell{padding:19px 12px calc(110px + env(safe-area-inset-bottom))}
+ h1{font-size:23px}.intro{margin-bottom:16px}.intro p{font-size:12px}
+ .stats{gap:7px}.stat{padding:11px 10px}.stat span{font-size:11px}.stat b{font-size:23px}
+ .filters{grid-template-columns:1fr 1fr;padding:11px;gap:8px}.filters label{font-size:11px}.filters label.search{grid-column:1/-1}
+ .filters select,.filters input{font-size:15px;min-height:47px}
+ .study-card{padding:15px 13px 13px}.c-head h2{font-size:17px}.question{font-size:16px}.keywords li{font-size:15px;line-height:1.9}
+ .answer{padding:13px}.toggle{min-height:51px;font-size:15px}.review-buttons button{min-height:49px;font-size:12px}
+ .btm{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;position:fixed;bottom:0;left:0;right:0;background:white;z-index:30;border-top:1px solid #d7e0e1;box-shadow:0 -4px 19px #18232b16;padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+ .btm a,.btm button{display:flex;flex-direction:column;justify-content:center;align-items:center;text-decoration:none;color:#5d6e76;background:transparent;border:0;border-radius:10px;font-weight:850;min-height:57px;font-size:11px;gap:3px}
+ .btm .active{color:#125c63;background:#e9f6f3}
+ .btm span{font-size:21px;line-height:1}
+}
+</style>
+</head>
+<body>
+<header><div class="top"><a class="brand" href="./"><span class="logo">宅</span><div><b>消して覚える / 宅建</b><small>重要知識を短い言葉で覚える</small></div></a><nav class="topnav"><a href="./">過去問3STEP復習</a><a href="./anki.html" class="active" aria-current="page">直前暗記</a></nav></div></header>
+<main class="shell">
+<section class="intro"><div><div class="kicker">2026 宅建試験・直前総まとめ</div><h1>直前暗記｜最優先の知識を詰める</h1><p>問題を見て頭で答える → キーワードを見る → ○△×で記録。<br>過去問の登録とは別の、基本・重要論点の暗記ページです。</p></div></section>
+<div class="stats"><div class="stat"><span>暗記項目</span><b id="total">--</b></div><div class="stat"><span>覚えた ○</span><b id="done">0</b></div><div class="stat"><span>要復習 △×</span><b id="review">0</b></div></div>
+<div class="filters"><label>科目<select id="subject"><option value="all">すべての科目</option><option>宅建業法</option><option>権利関係</option><option>法令上の制限</option><option>税・その他</option></select></label><label>重要度<select id="priority"><option value="A">最優先だけ</option><option value="all">すべて</option><option value="B">重要だけ</option></select></label><label>復習状況<select id="rating"><option value="all">すべて</option><option value="review">△・×のみ</option><option value="unseen">未判定のみ</option><option value="good">○だけ</option></select></label><label class="search">キーワード検索<input id="search" type="search" autocomplete="off" placeholder="例：時効 / 開発許可 / 数字"></label></div>
+<div class="countline"><span id="countline">教材を読み込み中…</span><button id="clearFilters" type="button">絞り込み解除</button></div>
+<div id="cards" class="cards" aria-live="polite"><div class="empty">暗記項目を読み込んでいます…</div></div>
+<div class="bottom-note">※「最優先」「重要」は復習順を決めるための目安で、実際の出題を保証するものではありません。2026年度の法改正・経過措置は、お使いのテキストと <a href="https://bookstore.tac-school.co.jp/dl_service/261011926/261011926" target="_blank" rel="noopener">TAC出版の2026年度法改正資料</a>でも照合してください。学習記録はこのブラウザ内に保存します。</div>
+</main>
+<nav class="btm" aria-label="スマホメニュー"><a href="./"><span>▤</span>過去問復習</a><a class="active" href="./anki.html" aria-current="page"><span>✦</span>直前暗記</a><button id="goTop" type="button"><span>↑</span>ページ先頭</button></nav>
+<script>
+(()=>{
+'use strict';
+const URL_DATA='./data/memory.json';
+const KEY_PROGRESS='takken_cram_progress_v1';
+const KEY_CACHE='takken_cram_cache_v1';
+const q=id=>document.getElementById(id);
+const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const subjects=['宅建業法','権利関係','法令上の制限','税・その他'];
+let topics=[],ratings={},opened={};
+function read(k,fallback){try{let s=localStorage.getItem(k);return s?JSON.parse(s):fallback}catch(e){return fallback}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){console.warn('学習記録はこのブラウザに保存できません',e)}}
+ratings=read(KEY_PROGRESS,{});
+if(!ratings||typeof ratings!=='object'||Array.isArray(ratings))ratings={};
+const statusText={good:'○',mid:'△',bad:'×'};
+function sortTopics(x,y){let s=subjects.indexOf(x.subject)-subjects.indexOf(y.subject);if(s)return s;if(x.priority!==y.priority)return x.priority==='A'?-1:1;return (x.unit+x.title).localeCompare(y.unit+y.title,'ja')}
+function validate(data){
+ let items=Array.isArray(data)?data:data?.topics;
+ if(!Array.isArray(items))throw Error('暗記項目の形式が正しくありません');
+ const seen=new Set();
+ return items.map(t=>{
+  if(typeof t.id!=='string'||!t.title||!t.subject||!Array.isArray(t.keywords)||!t.keywords.length||seen.has(t.id))throw Error('暗記項目のデータが不正です');
+  seen.add(t.id);
+  return {id:t.id,title:String(t.title),subject:String(t.subject),unit:String(t.unit||''),prompt:String(t.prompt||''),priority:t.priority==='B'?'B':'A',keywords:t.keywords.map(String),exceptions:Array.isArray(t.exceptions)?t.exceptions.map(String):[]};
+ }).sort(sortTopics);
+}
+function getFilters(){return {subject:q('subject').value,priority:q('priority').value,rating:q('rating').value,search:q('search').value.toLocaleLowerCase().trim()}}
+function filtered(){
+ const f=getFilters();return topics.filter(t=>{
+  const rating=ratings[t.id];
+  if(f.subject!=='all'&&f.subject!==t.subject)return false;
+  if(f.priority!=='all'&&f.priority!==t.priority)return false;
+  if(f.rating==='review'&&!['bad','mid'].includes(rating))return false;
+  if(f.rating==='unseen'&&['bad','mid','good'].includes(rating))return false;
+  if(f.rating==='good'&&rating!=='good')return false;
+  if(f.search&&![t.title,t.subject,t.unit,t.prompt,...t.keywords,...t.exceptions].join(' ').toLocaleLowerCase().includes(f.search))return false;
+  return true;
+ })
+}
+function card(t){
+ const open=!!opened[t.id],rating=ratings[t.id];
+ return '<section class="study-card" data-id="'+escapeHtml(t.id)+'"><div class="c-head"><div><span class="tag '+(t.priority==='B'?'secondary':'')+'">'+(t.priority==='A'?'最優先':'重要')+'</span><h2>'+escapeHtml(t.title)+'</h2><div class="unit">'+escapeHtml(t.subject)+' / '+escapeHtml(t.unit)+'</div></div><span class="rating '+(rating||'')+'">'+(statusText[rating]||'未')+'</span></div><div class="question">'+escapeHtml(t.prompt)+'</div><button class="toggle" data-toggle="'+escapeHtml(t.id)+'" aria-expanded="'+open+'">'+(open?'キーワードを隠す ↑':'キーワードを確認する ↓')+'</button>'+(open?'<div class="answer"><h3>覚える核心</h3><ul class="keywords">'+t.keywords.map(k=>'<li>'+escapeHtml(k)+'</li>').join('')+'</ul>'+(t.exceptions.length?'<div class="cautions"><h3>例外・間違えやすい点</h3><ul class="keywords">'+t.exceptions.map(k=>'<li>'+escapeHtml(k)+'</li>').join('')+'</ul></div>':'')+'</div><div class="review"><p>説明できたかを記録（答えを覚えていても不安なら△）</p><div class="review-buttons">'+[['good','○ 覚えた'],['mid','△ 不安'],['bad','× 覚え直す']].map(([v,label])=>'<button data-id="'+escapeHtml(t.id)+'" data-rating="'+v+'" class="'+(rating===v?'chosen':'')+'">'+label+'</button>').join('')+'</div></div>':'')+'</section>';
+}
+function renderStats(){q('total').textContent=topics.length;q('done').textContent=topics.filter(t=>ratings[t.id]==='good').length;q('review').textContent=topics.filter(t=>['mid','bad'].includes(ratings[t.id])).length}
+function renderCards(){
+ const items=filtered();q('countline').textContent='表示 '+items.length+' / '+topics.length+' 項目';
+ q('cards').innerHTML=items.length?items.map(card).join(''):'<div class="empty">該当する項目はありません。絞り込みを変更してください。</div>';
+ renderStats();
+}
+async function load(){
+ try{
+  const response=await fetch(URL_DATA,{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  topics=validate(await response.json());
+  save(KEY_CACHE,topics);
+ }catch(e){
+  try{topics=validate(read(KEY_CACHE,[]))}catch(err){topics=[]}
+  if(!topics.length){q('cards').innerHTML='<div class="empty">教材を読み込めませんでした。通信状況を確認してページを再読み込みしてください。</div>';q('countline').textContent='読込エラー';return}
+ }
+ renderCards();
+}
+q('cards').addEventListener('click',e=>{
+ const toggle=e.target.closest('button[data-toggle]');
+ if(toggle){const id=toggle.dataset.toggle;opened[id]=!opened[id];const section=toggle.closest('.study-card'),t=topics.find(x=>x.id===id);if(section&&t)section.outerHTML=card(t);return}
+ const rate=e.target.closest('button[data-rating][data-id]');
+ if(rate){const id=rate.dataset.id;ratings[id]=rate.dataset.rating;save(KEY_PROGRESS,ratings);const section=rate.closest('.study-card'),t=topics.find(x=>x.id===id);if(section&&t)section.outerHTML=card(t);renderStats();}
+});
+['subject','priority','rating'].forEach(id=>q(id).addEventListener('change',renderCards));
+q('search').addEventListener('input',renderCards);
+q('clearFilters').addEventListener('click',()=>{q('subject').value='all';q('priority').value='A';q('rating').value='all';q('search').value='';renderCards()});
+q('goTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+load();
+})();
+</script>
+</body>
+</html>
